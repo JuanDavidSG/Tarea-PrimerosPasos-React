@@ -18,21 +18,13 @@ export const App = () => {
         const num= newCurso.name
 
         if (curso.trim().length < 1 || typeof(num) === 'number') return;
-
-          const existeCurso =(name)=>{
-          let buscaCurso=cursos.find((curso)=>{
-            if (curso.name == name){
-              setCursos([...cursos])
-              console.log(buscaCurso)
-          }else{
-            console.log("Siiii")
-          }
-        })
-      }
-
-       
-        setCursos([...cursos, newCurso])   
-        
+      
+        const existeCurso = cursos.some((element) => element.name === newCurso.name);
+        if (existeCurso) {
+            window.alert("El curso ya existe!!!");
+        } else {
+            setCursos([...cursos, newCurso]);
+        }   
         setCurso('');
     }      
 
@@ -40,6 +32,7 @@ export const App = () => {
       const filterCursos=cursos.filter(curso=>curso.id !== id)
       setCursos(filterCursos)
     }
+
   return (
     <div>
         <h3>CURSOS UNISABANA</h3>
