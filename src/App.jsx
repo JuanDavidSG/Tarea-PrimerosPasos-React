@@ -19,6 +19,7 @@ export const App = () => {
 
         if (curso.trim().length < 1 || typeof(num) === 'number') return;
 
+       
         setCursos([...cursos, newCurso])   
         
         setCurso('');
