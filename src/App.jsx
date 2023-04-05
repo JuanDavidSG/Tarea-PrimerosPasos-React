@@ -23,7 +23,7 @@ export const App = () => {
         if (existeCurso) {
             window.alert("El curso ya existe!!!");
         } else {
-            setCursos([...cursos, newCurso])
+            setCursos([...cursos, newCurso]);
         }   
         setCurso('');
     }      
