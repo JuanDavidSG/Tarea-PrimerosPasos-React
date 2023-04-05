@@ -19,6 +19,17 @@ export const App = () => {
 
         if (curso.trim().length < 1 || typeof(num) === 'number') return;
 
+          const existeCurso =(name)=>{
+          let buscaCurso=cursos.find((curso)=>{
+            if (curso.name == name){
+              setCursos([...cursos])
+              console.log(buscaCurso)
+          }else{
+            console.log("Siiii")
+          }
+        })
+      }
+
        
         setCursos([...cursos, newCurso])   
         
