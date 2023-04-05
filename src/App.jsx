@@ -29,6 +29,28 @@ export const App = () => {
       setCursos(filterCursos)
     }
   return (
-    <div>App</div>
+    <div>
+        <h3>CURSOS UNISABANA</h3>
+        <hr/>
+        <div>
+            <div>
+                <h2>Agregue un curso</h2>
+                <form onSubmit={addCurso}>
+                    <input
+                        type="text"
+                        placeholder="Ingrese el curso..."
+                        onChange={(text) => setCurso(text.target.value)}
+                        value={curso}                    
+                    />
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+            <hr/>
+        </div>
+
+
+
+
+    </div>
   )
 }
