@@ -6,8 +6,10 @@ export const App = () => {
     const [curso , setCurso] = useState("");
     const [cursos, setCursos] = useState([{id: 2, name: 'Ingles 4'}, {id: 3, name: 'Física Mecánica'}])
 
-    const addCurso = (event) => {
+    const CourseItem = [curso, setCurso];
+    const CourseList = [cursos, setCursos];
 
+    const addCurso = (event) => {
         event.preventDefault();
 
         const newCurso = {
@@ -57,6 +59,8 @@ export const App = () => {
             {
               cursos.map((curso)=>(
                 <li key={curso.id}>
+                    <span>{curso.id}</span>
+                    &nbsp; &nbsp;
                   <span>{curso.name}</span>
                   <button 
                     onClick={()=>deleteCurso(curso.id)}
