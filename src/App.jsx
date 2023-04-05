@@ -23,6 +23,10 @@ export const App = () => {
         
         setCurso('');
     }      
+
+    const deleteCurso=(id)=>{
+      
+    }
   return (
     <div>App</div>
   )
