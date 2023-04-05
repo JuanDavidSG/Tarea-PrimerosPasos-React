@@ -1,0 +1,49 @@
+* {
+    
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(106, 200, 255);
+  }
+  
+  body {
+    padding: 60px;
+  }
+  
+  input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  button {
+    background-color: #492af8; /* Green */
+    border: 3px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color:rgb(255, 123, 0);
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color:rgb(4, 0, 255);
+  }
+  h3 {
+    font-size: 4rem;
+    color:rgb(33, 0, 85);
+    text-align: center;
+    
+  
+}
