@@ -46,11 +46,24 @@ export const App = () => {
                 </form>
             </div>
             <hr/>
-        </div>
-
-
-
-
+        <div>
+          <h2>Lista de cursos</h2>
+          <ul>
+            {
+              cursos.map((curso)=>(
+                <li key={curso.id}>
+                  <span>{curso.name}</span>
+                  <button 
+                    onClick={()=>deleteCurso(curso.id)}
+                  >
+                    Eliminar
+                  </button>
+                </li>
+              ))
+            }
+          </ul>
+    </div>
+    </div>
     </div>
   )
 }
