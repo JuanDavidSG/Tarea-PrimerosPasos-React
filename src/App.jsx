@@ -25,7 +25,8 @@ export const App = () => {
     }      
 
     const deleteCurso=(id)=>{
-      
+      const filterCursos=cursos.filter(curso=>curso.id !== id)
+      setCursos(filterCursos)
     }
   return (
     <div>App</div>
