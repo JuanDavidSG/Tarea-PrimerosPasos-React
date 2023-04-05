@@ -58,7 +58,7 @@ export const App = () => {
                     onClick={()=>deleteCurso(curso.id)}
                   >
                     Eliminar
-                  </button>dw
+                  </button>
                 </li>
               ))
             }
