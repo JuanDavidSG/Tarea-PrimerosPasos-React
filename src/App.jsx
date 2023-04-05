@@ -46,7 +46,6 @@ export const App = () => {
                 </form>
             </div>
             <hr/>
-        </div>
         <div>
           <h2>Lista de cursos</h2>
           <ul>
@@ -64,10 +63,7 @@ export const App = () => {
             }
           </ul>
     </div>
-
-
-
-
+    </div>
     </div>
   )
 }
